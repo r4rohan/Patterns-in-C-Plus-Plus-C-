@@ -11,7 +11,6 @@ int main()
     {
     	k = 1;
         for( j = 1; j <= 2 * n - 1; j++ )
-        // in order to print it i must be great or equal to j
         if( j >= (n + 1) - i  && j <= (n - 1) + i && k)
         {
             cout << "*";
