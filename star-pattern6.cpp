@@ -11,7 +11,7 @@ int main()
     {
     	k = 1;
         for( j = 1; j <= 2 * n - 1; j++ )
-        if( j >= (n + 1) - i  && j <= (n - 1) + i && k)
+        if( j >= (n + 1) - i  && j <= (n - 1) + i && k)   // if value of k is 1 then true otherwise false
         {
             cout << "*";
             k = 0;
