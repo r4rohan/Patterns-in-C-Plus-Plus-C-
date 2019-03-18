@@ -4,22 +4,23 @@ using namespace std;
 int main()
 {
 	
-    int i , j, k = 0, rows, x;
+    int i , j, rows;
     cin >> rows;
     for ( i = 1; i <= rows; i++ )
     {
-    	i < rows/2 + 2 ? k++ : k--;
-    	x = 1;
-        for( j = 1; j <= (rows + 1) / 2; j++ )
-        if( j >= ( rows/2 + 2 ) - k )   
+        for( j = 1; j <= rows; j++ )
+        if( j == i || j == ( rows + 1 ) - i )   
         {
-            cout << x;
-            x++;
-        }
+        	if( i == j)
+        		cout << "\\";
+        	else
+        		cout << "/";
+        	
+		}
         else
         {
-        	cout << " ";
-        }
+        	cout << "*";
+		}
 		cout << endl;
     }
 }
